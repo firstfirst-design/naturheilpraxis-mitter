@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 const UeberMich = () => {
   return (
     <Layout>
-      <p>I'm making this by following the Gatsby Tutorial.</p>
+      <p>Test Test Test</p>
     </Layout>
   );
 };
