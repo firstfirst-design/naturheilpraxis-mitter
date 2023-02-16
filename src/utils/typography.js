@@ -1,17 +1,23 @@
 import Typography from 'typography';
 
 const typography = new Typography({
-  baseFontSize: '24px',
-  baseLineHeight: 1.666,
-  headerFontFamily: [
-    'Avenir Next',
-    'Helvetica Neue',
-    'Segoe UI',
-    'Helvetica',
-    'Arial',
-    'sans-serif',
+  baseFontSize: '16px',
+  baseLineHeight: 1.45,
+  scaleRatio: 2,
+  googleFonts: [
+    {
+      name: 'Playfair Display',
+      styles: ['800'],
+    },
+    {
+      name: 'Roboto',
+      styles: ['400'],
+    },
   ],
-  bodyFontFamily: ['Georgia', 'serif'],
+  headerFontFamily: ['Playfair Display', 'serif'],
+  bodyFontFamily: ['Roboto', 'sans-serif'],
 });
+
+typography.injectStyles();
 
 export default typography;
